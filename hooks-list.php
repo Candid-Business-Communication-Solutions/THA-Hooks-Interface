@@ -27,6 +27,13 @@ function tha_interface_all_hooks() {
 				'wp_footer' => __( 'Immediately before closing &lt;body&gt; tag', $plugin_slug ),
 			)
 		),
+		'Admin' => array(
+			'name' => __( 'Admin', $plugin_slug ),
+			'hooks' => array(
+				'admin_head' => __( 'Inside &lt;head&gt; element', $plugin_slug ),
+				'admin_footer' => __( 'Immediately before closing &lt;body&gt; tag', $plugin_slug ),
+			)
+		),
 		'html' => array(
 			'name' => __( 'HTML', $plugin_slug ),
 			'hooks' => array(
